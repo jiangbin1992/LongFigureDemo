@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="5dp"
+        android:text="说明：网络下载生产长图，这是一个网络下载长图的demo，
+之前项目要求，网上也有很多但是用的时候总有不方便的地方再次大致整理一下思路
+1：首页明白长图合并是操作canvas画布保存bitmap；2：本地图片直接获取本地路径即可
+具体逻辑自己更改；3：网络图片必须下载到本地不能直接操作下载的bitmap；4：下载框架
+，尽量选择一个有队列先后顺序的便于保存；5：保存后下载的临时文件记得清理"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="网络生成上图"
+        android:textColor="@color/colorAccent" />
+
+
+</LinearLayout>
